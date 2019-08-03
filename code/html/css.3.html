@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="clearfix box-shadow padding-top-22">
+        <i class="box-gap"></i>
+        <div class="box-content clearfix">
+            <!--{名家名作 start}-->
+            <div class="famous">
+                <div class="plate-title margin-l-6">
+                    <h2>名家名作</h2>
+                </div>
+                <ul class="authorList clearfix">
+                    <li>
+                        <a target="_blank" href="https://www.wl.cn/search?author=苑子豪" class="img" title="苑子豪">
+                            <img src="http://static.wl.cn//upload/zhuanti/20190102/AA-1.jpg" alt="苑子豪">
+                        </a>
+                        <p class="author-key-message">
+                            <a href="https://www.wl.cn/search?author=苑子豪">苑子豪</a>
+                        </p>
+                        <p class="author-detail-message">
+                            苑子豪，青年作家，演员。当当网年度新锐作家,第十届作家榜金奖·年度新锐作家,中华儿慈会益童成长中心爱心大使,星月榜样盛典年度青年榜样,《鲁豫有约》《天天向上》人气嘉宾。
+                        </p>
+                        <p class="author-related-works">
+                            <span>相关作品：</span>
+
+                            <a target="_blank" href="https://www.wl.cn/9043061" title="我们的十年（签名本 北大双胞胎苑子豪新书）">我们的十年（签名本
+                                北大双胞胎苑子豪新书）</a>
+
+                            <a target="_blank" href="https://www.wl.cn/8878390" title="不好意思，次当大人">不好意思，次当大人</a>
+
+                            <a target="_blank" href="https://www.wl.cn/8430961" title="我们都一样.年轻又彷徨">我们都一样.年轻又彷徨</a>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.wl.cn/search?author=曹文轩" class="img" title="曹文轩">
+                            <img src="http://static.wl.cn//upload/zhuanti/20190102/AA-2.jpg" alt="曹文轩"></a>
+                        <p class="author-key-message">
+                            <a href="https://www.wl.cn/search?author=曹文轩">曹文轩</a>
+                        </p>
+                        <p class="author-detail-message">
+                            曹文轩，北京大学中文系教授，中国作家协会主席团委员，北京作家协会副主席。 著有长篇小说《山羊不吃天堂草》《草房子》《红瓦》《根鸟》《细米》《青铜葵花》《火印》等。
+                        </p>
+                        <p class="author-related-works">
+                            <span>相关作品：</span>
+
+                            <a target="_blank" href="https://www.wl.cn/6955200"
+                                title="草房子（曹文轩经典之作，经典中的经典！）">草房子（曹文轩经典之作，经典中的经典！）</a>
+
+                            <a target="_blank" href="https://www.wl.cn/9005612" title="我们回家">我们回家</a>
+
+                            <a target="_blank" href="https://www.wl.cn/8388953"
+                                title="小酒店里的怪客  曹文轩小说馆        回顾大师三十年创作之路，展现一个完整的曹文轩">小酒店里的怪客 曹文轩小说馆
+                                回顾大师三十年创作之路，展现一个完整的曹文轩</a>
+
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <!--{名家名作 end}-->
+            <!--{热门话题 start}-->
+            <!-- <div class="hot-topic">
+                <div class="plate-title">
+                    <h3>热门话题</h3>
+                </div>
+                <ul class="hot-topic-plate clearfix">
+
+                    <li>
+                        <a target="_blank" href="https://www.wl.cn/8608573" title="天幕红尘">
+                            <img src="http://static.wl.cn//upload/zhuanti/20190102/AA-3.jpg" alt="天幕红尘"></a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.wl.cn/8858274" title="心若从容 无所畏惧">
+                            <img src="http://static.wl.cn//upload/zhuanti/%E5%BF%83%E5%A6%82%E4%BB%8E%E5%AE%B9218-188.jpg"
+                                alt="心若从容 无所畏惧"></a>
+                    </li>
+
+                </ul>
+            </div> -->
+            <!--{热门话题 end}-->
+        </div>
+    </div>
+    <script>
+        var arr = [];
+        $("li").each(function (index, ele) {
+            // console.log(index, ele);
+            var o = {};
+            o.src = $(ele).find("img").attr("src");
+            o.name = $(ele).find(".author-key-message a").text();
+            o.detail = $(ele).find(".author-detail-message").text();
+            o.makebook = [];
+            $(ele).find(".author-related-works a").each(function (index, ele) {
+                // console.log(ele);
+
+                o.makebook.push($(ele).text())
+            })
+            // console.log(o.detail);
+
+            arr.push(o);
+        })
+        var data = JSON.stringify(arr);
+        console.log(data);
+
+    </script>
+</body>
+<!-- 
+
+
+ -->
+
+</html>

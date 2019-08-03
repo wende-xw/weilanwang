@@ -1,0 +1,24 @@
+{
+    "kind1": [
+        {
+            "src": "http://static.wl.cn//upload/zhuanti/温阳/7887878.jpg"
+        },
+        {
+            "src": "http://static.wl.cn//upload/zhuanti/20190102/A-6.jpg"
+        },
+        {
+            "src": "http://static.wl.cn//upload/zhuanti/20190102/A-7.jpg"
+        }
+    ],
+    "kind2": [
+        {
+            "src": "http://static.wl.cn//upload/zhuanti/20170111/212-106海底小纵队.jpg"
+        },
+        {
+            "src": "http://static.wl.cn//upload/zhuanti/20190102/A-8.jpg"
+        },
+        {
+            "src": "http://static.wl.cn//upload/zhuanti/20170111/212-106大侦探福尔摩斯.jpg"
+        }
+    ]
+}
