@@ -1,0 +1,345 @@
+{
+    "pic1": {
+        "title": "新书推荐",
+        "src": [
+            "http://static.wl.cn/upload/zhuanti/温阳/未标题-1.jpg",
+            "http://static.wl.cn//upload/zhuanti/20190102/A-3.jpg",
+            "http://static.wl.cn//upload/zhuanti/20190102/A-4.jpg"
+        ]
+    },
+    "pic2": {
+        "title": "热门话题",
+        "src": [
+            "http://static.wl.cn//upload/zhuanti/20190102/AA-3.jpg",
+            "http://static.wl.cn//upload/zhuanti/%E5%BF%83%E5%A6%82%E4%BB%8E%E5%AE%B9218-188.jpg"
+        ]
+    },
+    "rank1": {
+        "theme": "热销排行榜",
+        "title": [
+            "少儿",
+            "教材",
+            "艺术",
+            "小说"
+        ],
+        "data": [
+            [
+                {
+                    "number": 1,
+                    "infor": "绿野仙踪/影响孩子一生的世界十大名著(少儿注音彩图版)",
+                    "src": "http://img.wl.cn/s2/6445/56445/56445.jpg",
+                    "price": "￥15.80"
+                },
+                {
+                    "number": 2,
+                    "infor": "我的野生动物朋友:[摄影集]",
+                    "src": "http://img.wl.cn/s2/9162/89162/89162.jpg",
+                    "price": "￥29.00"
+                },
+                {
+                    "number": 3,
+                    "infor": "环游地球八十天",
+                    "src": "http://img.wl.cn/s2/5038/95038/95038.jpg",
+                    "price": "￥5.60"
+                },
+                {
+                    "number": 4,
+                    "infor": "21 世纪中小学黑板报手册",
+                    "src": "http://img.wl.cn/s2/9572/99572/99572.jpg",
+                    "price": "￥14.20"
+                },
+                {
+                    "number": 5,
+                    "infor": "脑力比拼三级跳 5-7岁C",
+                    "src": "http://img.wl.cn/s2/324/110324/110324.jpg",
+                    "price": "￥6.80"
+                },
+                {
+                    "number": 6,
+                    "infor": "中外快乐儿歌:幼读儿歌120",
+                    "src": "http://img.wl.cn/s2/9679/189679/189679.jpg",
+                    "price": "￥12.80"
+                },
+                {
+                    "number": 7,
+                    "infor": "那个骑轮箱来的蜜儿",
+                    "src": "http://img.wl.cn/s2/4147/214147/214147.jpg",
+                    "price": "￥15.00"
+                },
+                {
+                    "number": 8,
+                    "infor": "天上人间:中国星座的故事",
+                    "src": "http://img.wl.cn/s2/9339/239339/239339.jpg",
+                    "price": "￥24.80"
+                },
+                {
+                    "number": 9,
+                    "infor": "趣味汉字",
+                    "src": "http://img.wl.cn/s2/976/430976/430976.jpg",
+                    "price": "￥28.00"
+                },
+                {
+                    "number": 10,
+                    "infor": "孩子们的拜厄",
+                    "src": "http://img.wl.cn/s2/8439/488439/488439.jpg",
+                    "price": "￥38.00"
+                }
+            ],
+            [
+                {
+                    "number": 1,
+                    "infor": "生物化学.上册-(第三版)",
+                    "src": "http://img.wl.cn/s2/4486/34486/34486.jpg",
+                    "price": "￥56.00"
+                },
+                {
+                    "number": 2,
+                    "infor": "泛函分析基础",
+                    "src": "http://img.wl.cn/s2/4404/74404/74404.jpg",
+                    "price": "￥18.00"
+                },
+                {
+                    "number": 3,
+                    "infor": "企业服务营销/高丽华",
+                    "src": "http://img.wl.cn/s2/7504/147504/147504.jpg",
+                    "price": "￥18.00"
+                },
+                {
+                    "number": 4,
+                    "infor": "纳税会计与纳税筹划",
+                    "src": "http://img.wl.cn/s2/4167/154167/154167.jpg",
+                    "price": "￥35.00"
+                },
+                {
+                    "number": 5,
+                    "infor": "金融-(第二版)",
+                    "src": "http://img.wl.cn/s2/2152/212152/212152.jpg",
+                    "price": "￥23.30"
+                },
+                {
+                    "number": 6,
+                    "infor": "C语言程序设计 - - 面向21世纪高职高专计算机系列规划教材",
+                    "src": "http://img.wl.cn/s2/6240/216240/216240.jpg",
+                    "price": "￥11.50"
+                },
+                {
+                    "number": 7,
+                    "infor": "外贸会计教程(修订版)/高职高专会计类教材系列",
+                    "src": "http://img.wl.cn/s2/6322/216322/216322.jpg",
+                    "price": "￥27.00"
+                },
+                {
+                    "number": 8,
+                    "infor": "广义逆矩阵及其应用",
+                    "src": "http://img.wl.cn/s2/5658/225658/225658.jpg",
+                    "price": "￥10.50"
+                },
+                {
+                    "number": 9,
+                    "infor": "微观经济学",
+                    "src": "http://img.wl.cn/s2/8118/228118/228118.jpg",
+                    "price": "￥13.00"
+                },
+                {
+                    "number": 10,
+                    "infor": "化工自动化及仪表(工艺类专业适用)/高等学校教材",
+                    "src": "http://img.wl.cn/s2/8787/228787/228787.jpg",
+                    "price": "￥29.00"
+                }
+            ],
+            [],
+            [
+                {
+                    "number": 1,
+                    "infor": "红楼梦(上、下册)(全两册)",
+                    "src": "http://img.wl.cn/s2/6135/6135/6135.jpg",
+                    "price": "￥59.70"
+                },
+                {
+                    "number": 2,
+                    "infor": "零零碎碎",
+                    "src": "http://img.wl.cn/s2/5977/55977/55977.jpg",
+                    "price": "￥16.00"
+                },
+                {
+                    "number": 3,
+                    "infor": "毒案喋血",
+                    "src": "http://img.wl.cn/s2/9105/89105/89105.jpg",
+                    "price": "￥20.00"
+                },
+                {
+                    "number": 4,
+                    "infor": "怪杰徐文长:文侠小说",
+                    "src": "http://img.wl.cn/s2/4715/104715/104715.jpg",
+                    "price": "￥26.00"
+                },
+                {
+                    "number": 5,
+                    "infor": "三国演义(上 下 )(全二册)",
+                    "src": "http://img.wl.cn/s2/6329/126329/126329.jpg",
+                    "price": "￥39.50"
+                },
+                {
+                    "number": 6,
+                    "infor": "宋应星",
+                    "src": "http://img.wl.cn/s2/530/130530/130530.jpg",
+                    "price": "￥25.00"
+                },
+                {
+                    "number": 7,
+                    "infor": "柳残阳作品集:魔箭(上下)",
+                    "src": "http://img.wl.cn/s2/1476/171476/171476.jpg",
+                    "price": "￥28.80"
+                },
+                {
+                    "number": 8,
+                    "infor": "柳残阳作品集:独尊劫(上下)",
+                    "src": "http://img.wl.cn/s2/1477/171477/171477.jpg",
+                    "price": "￥28.80"
+                },
+                {
+                    "number": 9,
+                    "infor": "铁剑丹心(上下珍藏版)/柳残阳作品全集",
+                    "src": "http://img.wl.cn/s2/1479/171479/171479.jpg",
+                    "price": "￥29.80"
+                },
+                {
+                    "number": 10,
+                    "infor": "情侠",
+                    "src": "http://img.wl.cn/s2/587/240587/240587.jpg",
+                    "price": "￥23.00"
+                }
+            ]
+        ]
+    },
+    "rank2": {
+        "title": "热销排行榜",
+        "data": [
+            {
+                "number": 1,
+                "infor": "绿野仙踪/影响孩子一生的世界十大名著(少儿注音彩图版)",
+                "src": "http://img.wl.cn/s2/6445/56445/56445.jpg",
+                "price": "￥15.80"
+            },
+            {
+                "number": 2,
+                "infor": "我的野生动物朋友:[摄影集]",
+                "src": "http://img.wl.cn/s2/9162/89162/89162.jpg",
+                "price": "￥29.00"
+            },
+            {
+                "number": 3,
+                "infor": "环游地球八十天",
+                "src": "http://img.wl.cn/s2/5038/95038/95038.jpg",
+                "price": "￥5.60"
+            },
+            {
+                "number": 4,
+                "infor": "21 世纪中小学黑板报手册",
+                "src": "http://img.wl.cn/s2/9572/99572/99572.jpg",
+                "price": "￥14.20"
+            },
+            {
+                "number": 5,
+                "infor": "脑力比拼三级跳 5-7岁C",
+                "src": "http://img.wl.cn/s2/324/110324/110324.jpg",
+                "price": "￥6.80"
+            },
+            {
+                "number": 6,
+                "infor": "中外快乐儿歌:幼读儿歌120",
+                "src": "http://img.wl.cn/s2/9679/189679/189679.jpg",
+                "price": "￥12.80"
+            },
+            {
+                "number": 7,
+                "infor": "那个骑轮箱来的蜜儿",
+                "src": "http://img.wl.cn/s2/4147/214147/214147.jpg",
+                "price": "￥15.00"
+            },
+            {
+                "number": 8,
+                "infor": "天上人间:中国星座的故事",
+                "src": "http://img.wl.cn/s2/9339/239339/239339.jpg",
+                "price": "￥24.80"
+            },
+            {
+                "number": 9,
+                "infor": "趣味汉字",
+                "src": "http://img.wl.cn/s2/976/430976/430976.jpg",
+                "price": "￥28.00"
+            },
+            {
+                "number": 10,
+                "infor": "孩子们的拜厄",
+                "src": "http://img.wl.cn/s2/8439/488439/488439.jpg",
+                "price": "￥38.00"
+            }
+        ]
+    },
+    "rank3": {
+        "title": "热销排行榜",
+        "data": [
+            {
+                "number": 1,
+                "infor": "打开心灵:走进男孩真实的内心世界",
+                "src": "http://img.wl.cn/s2/9729/239729/239729.jpg",
+                "price": "￥29.00"
+            },
+            {
+                "number": 2,
+                "infor": "青少年心理卫生与心理咨询",
+                "src": "http://img.wl.cn/s2/3297/333297/333297.jpg",
+                "price": "￥40.00"
+            },
+            {
+                "number": 3,
+                "infor": "玩学习:三个博士姐妹的家庭教育",
+                "src": "http://img.wl.cn/s2/6591/396591/396591.jpg",
+                "price": "￥20.10"
+            },
+            {
+                "number": 4,
+                "infor": "孕育天才",
+                "src": "http://img.wl.cn/s2/3455/453455/453455.jpg",
+                "price": "￥5.00"
+            },
+            {
+                "number": 5,
+                "infor": "新手父母1日1教-2岁B",
+                "src": "http://img.wl.cn/s2/8404/618404/618404.jpg",
+                "price": "￥14.50"
+            },
+            {
+                "number": 6,
+                "infor": "新手父母1日1教-3岁B",
+                "src": "http://img.wl.cn/s2/8451/618451/618451.jpg",
+                "price": "￥5.80"
+            },
+            {
+                "number": 7,
+                "infor": "养育技能指导计划—心理治疗指导计划系列（万千教育）",
+                "src": "http://img.wl.cn/s2/3153/853153/853153.jpg",
+                "price": "￥35.00"
+            },
+            {
+                "number": 8,
+                "infor": "怎样做父母:中学生家长读本",
+                "src": "http://img.wl.cn/s2/6043/1006043/1006043.jpg",
+                "price": "￥10.00"
+            },
+            {
+                "number": 9,
+                "infor": "成功父母的七个秘诀",
+                "src": "http://img.wl.cn/s2/7469/1037469/1037469.jpg",
+                "price": "￥23.80"
+            },
+            {
+                "number": 10,
+                "infor": "产后极速纤体",
+                "src": "http://img.wl.cn/s2/2402/1192402/1192402.jpg",
+                "price": "￥10.70"
+            }
+        ]
+    }
+}

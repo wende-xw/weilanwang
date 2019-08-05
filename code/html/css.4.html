@@ -14,7 +14,7 @@
         <i class="box-gap"></i>
         <div class="box-content clearfix">
             <!--{热门图书 start}-->
-            <div class="periodicals-magazines">
+            <!-- <div class="periodicals-magazines">
                 <div class="plate-title margin-l-6">
                     <h2>热门图书</h2>
                 </div>
@@ -100,10 +100,10 @@
                     </li>
 
                 </ul>
-            </div>
+            </div> -->
             <!--{热门图书 end}-->
             <!--{热销排行榜 start}-->
-            <!-- <div class="hot-rank-list hot-rank-list4">
+            <div class="hot-rank-list hot-rank-list4">
                 <div class="plate-title">
                     <h3>热销排行榜</h3>
                 </div>
@@ -260,27 +260,27 @@
 
 
                 </ul>
-                <!--     <p class="more"> -->
-
-            <!--     </p> -->
-        </div> -->
-        <!--{热销排行榜 end}-->
-    </div>
+            </div>
+            <!--{热销排行榜 end}-->
+        </div>
     </div>
 
 
 
 
     <script>
+        var oul = $(".hot-list").children("li");
         var arr = [];
-        $("li").each(function (index, ele) {
-            console.log(index, ele);
+        oul.each(function (index, ele) {
             var o = {};
+            o.number = index + 1;
+            o.infor = $(ele).find(".infor").text();
             o.src = $(ele).find("img").attr("src");
-            o.title = $(ele).find(".book-intro").text();
-            o.price = $(ele).find("span").text();
+            o.price = $(ele).find(".price").text();
             arr.push(o);
         })
+
+        // console.log(arr);
         var data = JSON.stringify(arr);
         console.log(data);
 

@@ -128,25 +128,25 @@ $(function () {
     });
 
     // 编辑推荐
-    ((new boxContent("editor-choice", "presell")).init());
+    ((new boxContent("editor-choice", "hot-rank-list hot-rank-list3")).init());
     $.getJSON("../serve/json/new_books.json", json => {
         (new typeOne(json.part2, "editor-choice")).init()
     });
 
     //特价好书
-    ((new boxContent("bargain-price", "presell")).init());
+    ((new boxContent("bargain-price", "hot-rank-list hot-rank-list2")).init());
     $.getJSON("../serve/json/new_books.json", json => {
         (new typeOne(json.part3, "bargain-price")).init()
     });
 
     //名家作品
-    ((new boxContent("famous", "presell")).init());
+    ((new boxContent("famous", "hot-topic clearfix")).init());
     $.getJSON("../serve/json/new_books.json", json => {
         (new typeOne(json.part4, "famous")).init()
     });
 
     //热门图书
-    ((new boxContent("periodicals-magazines", "presell")).init());
+    ((new boxContent("periodicals-magazines", "hot-rank-list hot-rank-list1")).init());
     $.getJSON("../serve/json/new_books.json", json => {
         (new typeOne(json.part5, "periodicals-magazines")).init()
     });

@@ -14,6 +14,11 @@ a {
   color: #666666;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #7f7fe4;
+}
+
 .clearfix::after {
   visibility: hidden;
   display: block;
@@ -791,7 +796,7 @@ html, body {
   height: 525px;
 }
 
-.index #container .box_shadow .box_content .presell {
+.index #container .box_shadow .box_content .presell, .index #container .box_shadow .box_content .hot-topic {
   position: relative;
   padding-right: 4px;
   float: right;
@@ -800,13 +805,13 @@ html, body {
   background: #ffffff;
 }
 
-.index #container .box_shadow .box_content .presell .plate-title {
+.index #container .box_shadow .box_content .presell .plate-title, .index #container .box_shadow .box_content .hot-topic .plate-title {
   position: relative;
   height: 32px;
   border-bottom: 2px solid #e6e7e8;
 }
 
-.index #container .box_shadow .box_content .presell .plate-title h3 {
+.index #container .box_shadow .box_content .presell .plate-title h3, .index #container .box_shadow .box_content .hot-topic .plate-title h3 {
   position: absolute;
   left: 0;
   top: 0;
@@ -820,7 +825,7 @@ html, body {
   font-size: 14px;
 }
 
-.index #container .box_shadow .box_content .presell .presell-plate {
+.index #container .box_shadow .box_content .presell .presell-plate, .index #container .box_shadow .box_content .hot-topic .presell-plate {
   height: 476px;
   margin-top: 10px;
   border-left: 1px solid #e4e4e4;
@@ -828,13 +833,208 @@ html, body {
   overflow: hidden;
 }
 
-.index #container .box_shadow .box_content .presell .presell-plate a {
+.index #container .box_shadow .box_content .presell .presell-plate a, .index #container .box_shadow .box_content .hot-topic .presell-plate a {
   display: block;
   width: 237px;
 }
 
-.index #container .box_shadow .box_content .presell .presell-plate a img {
+.index #container .box_shadow .box_content .presell .presell-plate a img, .index #container .box_shadow .box_content .hot-topic .presell-plate a img {
   width: 237px;
+}
+
+.index #container .box_shadow .box_content .presell .hot-topic-plate, .index #container .box_shadow .box_content .hot-topic .hot-topic-plate {
+  width: 238px;
+  margin: 0 0 0 7px;
+}
+
+.index #container .box_shadow .box_content .presell .hot-topic-plate a, .index #container .box_shadow .box_content .hot-topic .hot-topic-plate a {
+  float: left;
+  width: 218px;
+  height: 188px;
+  padding: 9px;
+  margin-top: 12px;
+  background: #e2f1ee;
+}
+
+.index #container .box_shadow .box_content .presell .hot-topic-plate a img, .index #container .box_shadow .box_content .hot-topic .hot-topic-plate a img {
+  width: 218px;
+  height: 188px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list {
+  position: relative;
+  padding-right: 4px;
+  float: right;
+  width: 246px;
+  background: #ffffff;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .plate-title {
+  position: relative;
+  height: 32px;
+  border-bottom: 2px solid #e6e7e8;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .plate-title h3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 32px;
+  overflow: hidden;
+  line-height: 32px;
+  padding-left: 3px;
+  border-bottom: 2px solid #2ba2e6;
+  color: #2ba2e6;
+  font-size: 14px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-sort {
+  margin-bottom: 0;
+  border-left: 1px solid #e4e4e4;
+  padding-left: 8px;
+  margin-top: 5px;
+  padding-top: 2px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-sort li {
+  display: block;
+  float: left;
+  width: 37px;
+  height: 25px;
+  line-height: 21px;
+  text-align: center;
+  color: #0163af;
+  cursor: pointer;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-sort .active {
+  color: #333333;
+  background: url(../images/hot-active.gif) no-repeat;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4px;
+  margin-top: 0;
+  height: 340px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list li {
+  position: relative;
+  height: 29px;
+  margin-left: 12px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list li a .small-img {
+  display: none;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list li a .small-img img {
+  width: 36px;
+  height: 54px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list li a .number {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  _top: 7px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  background: url(../images/number-bg.gif) 0 0 no-repeat;
+  color: #565656;
+  text-align: center;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list li a .infor {
+  position: absolute;
+  left: 20px;
+  width: 187px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 4px;
+  overflow: hidden;
+  color: #666666;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list li a .price {
+  display: none;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list .active {
+  width: 241px;
+  height: 76px;
+  margin-left: 0;
+  margin-bottom: 4px;
+  background: #f8f8f8;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list .active .small-img {
+  display: block;
+  position: absolute;
+  left: 33px;
+  top: 9px;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  border: 1px solid #d2d2d2;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list .active .number {
+  top: 5px;
+  margin-left: 12px;
+  background: url(../images/number-bg.gif) 0 -13px no-repeat;
+  color: #d70000;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list .active .infor {
+  position: absolute;
+  left: 96px;
+  top: 10px;
+  height: 36px;
+  line-height: 18px;
+  width: 97px;
+  border: none;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot-list .active .price {
+  display: block;
+  position: absolute;
+  left: 96px;
+  top: 49px;
+  color: #cc3300;
+  font-weight: 600;
+  font-family: 微软雅黑;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .J_hot-block {
+  height: 412px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list .hot_cur {
+  display: block;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list3 {
+  height: 520px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list2 {
+  height: 433px;
+}
+
+.index #container .box_shadow .box_content .hot-rank-list1 {
+  height: 525px;
 }
 
 .index #footer .footer_tips {

@@ -72,18 +72,9 @@
             </div>
             <!--{特价好书 end}-->
             <!--{热销排行榜 start}-->
-            <!-- <div class="hot-rank-list hot-rank-list2">
+            <div class="hot-rank-list hot-rank-list2">
                 <div class="plate-title">
-                    <h3>热销排行榜[com.wl.wlnet.web.common.dto.page.PageModelDTO@34f12104,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@58c9bc68,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@5537bf9e,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@742ec823,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@5eca3ae,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@6517019f,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@393c9de6,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@3a220f6,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@15371c70,
-                        com.wl.wlnet.web.common.dto.page.PageModelDTO@3dbd8ae6]</h3>
+                    <h3>热销排行榜</h3>
                 </div>
                 <ul class="hot-list">
 
@@ -247,40 +238,32 @@
 
 
                 </ul>
-                <!--             <p class="more"> -->
+                <!--             <p class="more">
 
             <!--             </p> -->
-            <!-- </div> --> -->
-            <!--{热销排行榜 end}-->
+                <!-- </div> --> -->
+                <!--{热销排行榜 end}-->
+            </div>
         </div>
-    </div>
-    <script>
-        var arr = [];
-        $("li").each(function (index, ele) {
-            console.log(index, ele);
-            var o = {};
-            o.src = $(ele).find("img").attr("src");
-            o.title = $(ele).find(".book-intro").text();
-            o.price = $(ele).find("span").text();
-            arr.push(o);
-        })
-        var data = JSON.stringify(arr);
-        console.log(data);
-
-    </script>
-    <script>
-        var arr = [];
-        $(".flash-sale-recommend-plate").each(function (index, ele) {
-            $(ele).find("img").each(function (index, ele) {
+        <script>
+            var oul = $(".hot-list").children("li");
+            var arr = [];
+            oul.each(function (index, ele) {
                 var o = {};
-                o.src = $(ele).attr("src");
+                o.number = index + 1;
+                o.infor = $(ele).find(".infor").text();
+                o.src = $(ele).find("img").attr("src");
+                o.price = $(ele).find(".price").text();
                 arr.push(o);
             })
-        })
-        var data = JSON.stringify(arr);
-        console.log(data);
 
-    </script>
+            // console.log(arr);
+            var data = JSON.stringify(arr);
+            console.log(data);
+
+
+
+        </script>
 </body>
 <!-- 
 

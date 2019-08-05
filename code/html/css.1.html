@@ -101,7 +101,7 @@
             </div>
             <!--{编辑推荐 end}-->
             <!--{热销排行榜 start}-->
-            <!-- <div class="hot-rank-list hot-rank-list3">
+            <div class="hot-rank-list hot-rank-list3">
             <div class="plate-title">
                 <h3>热销排行榜</h3>
             </div>
@@ -663,25 +663,50 @@
                     
                 </ul>
             
-        <!--     <p class="more"> -->
+            <!-- <p class="more">
 
-            <!--     </p> -->
-        </div> -->
+                </p> -->
+        </div>
         <!--{热销排行榜 end}-->
     </div>
     </div>
     <script>
-        var arr = [];
-        $("li").each(function (index, ele) {
-            console.log(index, ele);
-            var o = {};
-            o.src = $(ele).find("img").attr("src");
-            o.title = $(ele).find(".book-intro").text();
-            o.price = $(ele).find("span").text();
-            arr.push(o);
+        var ool=$(".hot-sort").find("li");
+        // console.log(ool);
+        var oul=$(".hot-list");
+        // console.log(oul);
+        var o=[];
+        oul.each(function (index,ele) {
+            var arr=[];
+            $(ele).find("li").each(function(index,ele){
+                var o={};
+                o.number=index+1;
+                o.infor=$(ele).find(".infor").text();
+                o.src=$(ele).find("img").attr("src");
+                o.price=$(ele).find(".price").text();
+                arr.push(o);
+            })
+            o.push(arr);
+            // console.log(arr);
+            // console.log(index,ele);
+            
         })
-        var data = JSON.stringify(arr);
+        // console.log(o);
+        
+        var data = JSON.stringify(o);
         console.log(data);
+        
+        // var arr = [];
+        // $("li").each(function (index, ele) {
+        //     console.log(index, ele);
+        //     var o = {};
+        //     o.src = $(ele).find("img").attr("src");
+        //     o.title = $(ele).find(".book-intro").text();
+        //     o.price = $(ele).find("span").text();
+        //     arr.push(o);
+        // })
+        // var data = JSON.stringify(arr);
+        // console.log(data);
 
     </script>
 </body>
