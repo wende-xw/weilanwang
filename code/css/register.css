@@ -1,0 +1,399 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+#page {
+  background: #f9f9f9;
+  font-size: 12px;
+  font-family: '新宋体', '宋体', '微软雅黑', Arial;
+}
+
+#page #header {
+  background-color: #fff;
+  height: 68px;
+  margin-top: 0px;
+  border-bottom: 3px solid #2ba2e6;
+  min-width: 981px;
+}
+
+#page #header .header-search {
+  height: 62px;
+  margin-top: 5px;
+  position: relative;
+  width: 966px;
+  padding-left: 15px;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+#page #header .header-search .logo {
+  margin-top: 0px;
+  float: left;
+}
+
+#page #header .header-search .logo img {
+  margin-top: 10px;
+}
+
+#page #container {
+  height: 500px;
+  position: relative;
+  zoom: 1;
+  z-index: 10;
+  width: 998px;
+  margin: 0 auto;
+  background: pink;
+}
+
+#page #container .box-content {
+  height: 500px;
+  overflow: visible;
+  position: relative;
+  zoom: 1;
+  display: block;
+  padding: 0 10px 0px 8px;
+  background: url(../images/bg-box.png) left bottom repeat-y;
+}
+
+#page #container .box-content .register-frame {
+  position: absolute;
+  top: 38px;
+  left: 125px;
+  width: 720px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+}
+
+#page #container .box-content .register-frame h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #666666;
+  font-family: '微软雅黑';
+  font-weight: 150;
+  text-align: center;
+}
+
+#page #container .box-content .register-frame .register-type {
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 3px;
+  cursor: default;
+}
+
+#page #container .box-content .register-frame .register-type div {
+  width: 355px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+
+#page #container .box-content .register-frame .register-type .register-email {
+  cursor: pointer;
+}
+
+#page #container .box-content .register-frame .register-type .register-phone {
+  cursor: pointer;
+}
+
+#page #container .box-content .register-frame .register-type .select {
+  border-bottom: 2px solid #2ba2e6;
+}
+
+#page #container .box-content .register-frame .register-form {
+  height: 303px;
+  margin-top: 32px;
+  padding-left: 100px;
+  display: none;
+}
+
+#page #container .box-content .register-frame .register-form p {
+  position: relative;
+  height: 47px;
+}
+
+#page #container .box-content .register-frame .register-form p label {
+  font-size: 14px;
+  color: #333333;
+}
+
+#page #container .box-content .register-frame .register-form p input {
+  width: 175px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  overflow: hidden;
+  background: url(../images/login-input.gif) no-repeat;
+  border: none;
+}
+
+#page #container .box-content .register-frame .register-form p .error-input {
+  border: 1px solid #ff0033;
+  box-shadow: 0 0 4px #ff6666;
+}
+
+#page #container .box-content .register-frame .register-form p .error-tip {
+  padding: 3px;
+  position: absolute;
+  min-width: 20px;
+  max-width: 1000px;
+  min-height: 25px;
+  height: auto;
+  left: 295px;
+  top: -3px;
+  background: url(../images/error.gif) 5px center no-repeat;
+  padding-left: 25px;
+  box-shadow: inset 0 0 3px #fff;
+  line-height: 25px;
+  display: none;
+}
+
+#page #container .box-content .register-frame .register-form p .correct-tip {
+  position: absolute;
+  left: 295px;
+  top: -3px;
+  min-width: 20px;
+  max-width: 1000px;
+  min-height: 25px;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  background: url(../images/yes.png) 5px center no-repeat;
+  padding-left: 25px;
+  box-shadow: inset 0 0 3px #fff;
+  padding: 3px;
+  display: none;
+}
+
+#page #container .box-content .register-frame .register-form p .e-c-cur {
+  display: block;
+}
+
+#page #container .box-content .register-frame .register-form .register-label {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+}
+
+#page #container .box-content .register-frame .register-form .register-email-submit {
+  width: 103px;
+  height: 35px;
+  margin: 12px 0 0 75px;
+  background: url(../images/register-btn.gif) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+#page #container .box-content .register-frame .register-form .register-validCodeButton-label {
+  display: inline-block;
+}
+
+#page #container .box-content .register-frame .register-form .register-validCodeButton-label #J_validCodes {
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  box-shadow: 1px 1px 1px 0 #eaeaea inset;
+  width: 60px;
+  height: 28px;
+}
+
+#page #container .box-content .register-frame .register-form .register-validCodeButton-label #J_update_validCode {
+  position: absolute;
+  left: 190px;
+  top: -5px;
+}
+
+#page #container .box-content .register-frame .register-form .register-validCodeButton-label .register-validCodeButton {
+  display: block;
+  width: 130px;
+  height: 28px;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+#page #container .box-content .register-frame .reg-form-cur {
+  display: block;
+}
+
+#page #container .box-content .register-frame .login {
+  height: 67px;
+  background-color: #f7f7f7;
+}
+
+#page #container .box-content .register-frame .login p {
+  color: #888888;
+  width: 512px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+#page #container .box-content .register-frame .login p a {
+  color: #888888;
+}
+
+#page #footer .footer_tips {
+  width: 998px;
+  padding-top: 30px;
+  margin: 0 auto;
+  min-height: 200px;
+  margin-top: -6px;
+  box-sizing: border-box;
+  position: relative;
+  zoom: 1;
+  z-index: 10;
+}
+
+#page #footer .footer_tips i {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  background: url(../images/bg-box-gap.png) left top no-repeat;
+  font-size: 0;
+  content: " ";
+}
+
+#page #footer .footer_tips .box_content {
+  position: relative;
+  zoom: 1;
+  display: block;
+  padding: 0 10px 0px 8px;
+  background: url(../images/bg-box.png) left bottom repeat-y;
+  overflow: hidden;
+}
+
+#page #footer .footer_tips .box_content .related_links {
+  float: left;
+  width: 690px;
+  height: 168px;
+  padding-top: 3px;
+  padding-left: 40px;
+}
+
+#page #footer .footer_tips .box_content .related_links div {
+  width: 120px;
+  float: left;
+}
+
+#page #footer .footer_tips .box_content .related_links div h3 {
+  display: block;
+  height: 24px;
+  font-size: 13px;
+  text-align: left;
+  color: #666666;
+}
+
+#page #footer .footer_tips .box_content .related_links div a {
+  display: block;
+  line-height: 20px;
+  color: #666666;
+}
+
+#page #footer .footer_tips .box_content .follow_us {
+  position: relative;
+  top: -5px;
+  float: right;
+  width: 250px;
+  height: 161px;
+}
+
+#page #footer .footer_tips .box_content .follow_us img {
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+#page #footer .footer_tips .box_content .follow_us div {
+  height: 159px;
+  padding-top: 8px;
+  background: url(../images/border-bg-y.gif) repeat-y;
+}
+
+#page #footer .footer_nav {
+  min-height: 34px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: url(../images/nav-box.png) repeat-x;
+}
+
+#page #footer .footer_nav .f_n {
+  width: 815px;
+  margin: 0 auto;
+}
+
+#page #footer .footer_nav .f_n span {
+  background: url(../images/footer-icon1.png) no-repeat;
+  display: block;
+  float: left;
+  width: 135px;
+  height: 34px;
+  line-height: 34px;
+  background-position: left 3px;
+  padding-left: 28px;
+  color: #fefefe;
+  font-size: 16px;
+  font-family: '微软雅黑';
+  cursor: default;
+  text-decoration: none;
+}
+
+#page #footer .footer_links {
+  width: 545px;
+  min-height: 18px;
+  margin: 17px auto;
+}
+
+#page #footer .footer_links a {
+  color: #333333;
+}
+
+#page #footer .footer_copyright {
+  width: 900px;
+  min-height: 85px;
+  margin: auto;
+  padding: 25px 0;
+  background: url(../images/copyright.gif) 320px 8px no-repeat;
+  box-sizing: border-box;
+}
+
+#page #footer .footer_copyright .copyright {
+  padding-right: 70px;
+}
+
+#page #footer .footer_final {
+  width: 260px;
+  min-height: 47px;
+  margin: 31px auto;
+}
+
+#page #footer .footer_final a {
+  display: block;
+  width: 128px;
+  height: 47px;
+  background: url(../images/footer-certificate2.gif) no-repeat;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../captcha-mini-master/captcha-mini.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="header-search clearfix">
+                <a href="https://www.wl.cn/index" class="logo">
+                    <img src="https://www.wl.cn/resources/img/mall/logo.png" alt="欢迎来到蔚蓝">
+                </a>
+            </div>
+        </div>
+
+        <div id="container">
+            <div class="box-content">
+                <div class="register-frame">
+                    <div class="register-type">
+                        <div class="register-email">
+                            <h1>邮箱账户注册</h1>
+                        </div>
+                        <div class="register-phone">
+                            <h1>手机号码注册</h1>
+                        </div>
+                    </div>
+
+                    <!-- 邮箱注册 -->
+                    <div class="register-form">
+                        <p>
+                            <label class="register-label">邮箱：</label>
+                            <input type="text" name="email" id="useemail">
+                            <span class="error-tip">输入的email地址格式不正确</span>
+                            <span class="correct-tip"></span>
+                        </p>
+                        <p>
+                            <label>登录密码：</label>
+                            <input type="password" name="passWord" id="passwordA">
+                            <input type="hidden" id="J_pwd_email_hidden" name="passwd">
+                            <span class="error-tip"> 请输入长为6-20个字符的密码，密码必须包含数字、字母</span>
+                            <span class="correct-tip"></span>
+                        </p>
+                        <p>
+                            <label>确认密码：</label>
+                            <input type="password" name="repeatPassWord_email" id="passwordB">
+                            <span class="error-tip"> 两次输入密码不匹配</span>
+                            <span class="correct-tip"></span>
+                        </p>
+                        <p>
+                            <button class="register-email-submit" type="submit"></button>
+                        </p>
+                    </div>
+
+                    <!-- 手机注册 -->
+                    <div class="register-form">
+                        <p>
+                            <label class="register-label">手机号码：</label>
+                            <input type="text" name="email" id="userphone">
+                            <span class="error-tip">手机号码不能为空</span>
+                            <span class="correct-tip"></span>
+                        </p>
+                        <p>
+                            <label class="register-label">登陆密码：</label>
+                            <input type="text" name="email" id="passwordC">
+                            <span class="error-tip"> 请输入长为6-20个字符的密码，密码必须包含数字、字母</span>
+                            <span class="correct-tip"></span>
+                        </p>
+                        <p>
+                            <label class="register-label">确认密码：</label>
+                            <input type="text" name="email" id="passwordD">
+                            <span class="error-tip"> 两次输入密码不匹配</span>
+                            <span class="correct-tip"></span>
+                        </p>
+
+                        <!-- 图形验证码 -->
+                        <p class="register-validCodeButton-label">
+                            <label class="register-label">验证码：</label>
+                            <input type="text" id="J_validCodes" name="randomNumSs" class="checkcode error-field">
+                            <canvas id="J_update_validCode" width="80" height="35"></canvas>
+                            <span class="error-tip"></span>
+                            <span class="correct-tip"></span>
+                            <br>
+                            <button class="register-validCodeButton" type="button">发送手机确认码</button>
+                        </p>
+                        <br>
+                        <br>
+                        <!-- 确认手机验证码 -->
+                        <p>
+                            <label class="register-label">确认码：</label>
+                            <input type="text" name="email" id="msgcode">
+                            <span class="error-tip">请输入正确的验证码</span>
+                            <span class="correct-tip"></span>
+                        </p>
+
+                        <p>
+                            <button class="register-email-submit" type="submit"></button>
+                        </p>
+                    </div>
+
+
+                    <div class="login">
+                        <p>有蔚蓝账户？请 <a href="https://www.wl.cn/passport/tologin">登录</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+
+    </div>
+    <script src="../js/register1.js"></script>
+    <script src="../js/register2.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("./wlfooter.html", function () {
+                console.log("加载成功");
+            })
+
+        })
+    </script>
+</body>
+
+</html>

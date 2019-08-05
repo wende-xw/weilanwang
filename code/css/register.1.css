@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/*-----------------------------------------------------------------------------
+* @Description: 注册页面样式 (register.css)
+* @Version: 	V1.0.0
+* @author: 		huanhuan(965788210@qq.com)
+* @date			2013.02.27
+* ==NOTES:=============================================
+* v1.0.0(2013.02.27):
+* 	初始生成 
+* ---------------------------------------------------------------------------*/
+.padding-t-0{
+	padding-top: 0;
+}
+.login-register-header{
+	background-image:url();
+	background-color: #fff;
+	height: 68px;
+	margin-top:0px;
+}
+.logo{
+	margin-top:0px;
+}
+.header-search{
+	margin-top:0px;
+}
+.container{
+	height: 500px;
+}
+.container .box-content{
+	height: 500px;
+	overflow:visible;
+}
+.register-frame{
+	position: absolute;
+	top: 38px;
+	left: 125px;
+	width: 720px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+}
+.register-type{
+	border-bottom: 1px solid #d4d4d4;
+  	border-radius: 3px;
+/*   	padding:10px; */
+  	cursor: default;
+}
+.register-type div{
+	width:355px;
+	display:inline-block;
+	height:40px;
+	line-height: 40px;
+}
+
+#J_validCodes{
+	background:#fff;
+	border:1px solid #c8c8c8;
+	box-shadow:1px 1px 1px 0 #eaeaea inset;
+	width: 60px;
+	height: 28px;
+	
+}
+
+#J_update_validCode{
+	left: 190px;
+	width: 68px;
+	height: 32px;
+}
+
+.register-type-selected{
+	border-bottom: 2px solid #2ba2e6;
+}
+#J_signInFormToEmail{
+}
+#J_signInForm{
+	display:none;
+}
+.register-phone{
+	cursor: pointer;
+}
+.register-email{
+	cursor: pointer;
+}
+.register-frame h1{
+	margin: 0;
+	font-size: 18px;
+	color: #666666;
+	font-family: '微软雅黑';
+	font-weight: 150;
+	text-align: center;
+}
+.register-frame form{
+	height: 303px;
+	margin-top: 32px;
+	padding-left: 100px;
+}
+.register-frame form p{
+	position: relative;
+	height: 47px;
+}
+.register-frame form input{
+	border: none;
+}
+.register-frame form input[type='text'],.register-frame form input[type='password']{
+	width: 175px;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	overflow: hidden;
+	background: url("../../img/mall/login-input.gif") no-repeat;
+}
+.register-frame form input[type='radio']{
+	margin-left:15px;
+}
+.register-frame form select{
+	width: 195px;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+	text-align:center;
+	border: none;
+	background: url("../../img/mall/login-input.gif") no-repeat;
+}
+.register-frame form p label{
+	font-size: 14px;
+	color: #333333;
+}
+.register-frame form p span{
+	color: #888888;
+	font-size: 12px;
+}
+.register-frame form p span.sex{
+	color: #888888;
+	font-size: 16px;
+}
+.login{
+	height: 67px;
+	background-color: #f7f7f7;
+}
+.login p{
+	width: 512px;
+	margin: 0 auto;
+	padding-top:26px;
+}
+.login p,.login p a{
+	color: #888888;
+}
+.register-frame form p img{
+	position: absolute;
+	left: 75px;
+	width: 142px;
+	height: 44px;
+}
+.register-frame form p em{
+	position: absolute;
+	left: 240px;
+	top: 20px;
+}
+.register-frame form p a{
+	position: absolute;
+	left: 295px;
+	top: 20px;
+	color: #0163af;
+}
+.register-frame form p .register-submit{
+	width: 103px;
+	height: 35px;
+	margin: 12px 0 0 75px;
+	background: url("../../img/mall/register-btn.gif") no-repeat;
+	border: none;
+	cursor: pointer;
+}
+.register-frame form p .register-email-submit{
+	width: 103px;
+	height: 35px;
+	margin: 12px 0 0 75px;
+	background: url("../../img/mall/register-btn.gif") no-repeat;
+	border: none;
+	cursor: pointer;
+}
+.register-validCode-label{
+	width:300px;display: inline-block;
+}
+.register-validCodeButton-label{
+	display: inline-block;
+}
+.register-validCodeButton{
+	display:block;
+	width:130px;
+	height:28px;
+	margin-left: 75px;
+	margin-top: 10px;
+}
+.placeholder{
+	width:12px;
+	height:12px;
+}
+.register-label{
+	display: inline-block;
+	width : 70px;
+	text-align:right;
+}
+
+
+/* CSS Document */
