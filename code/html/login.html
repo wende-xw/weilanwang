@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="header-search clearfix">
+                <a href="https://www.wl.cn/index" class="logo">
+                    <img src="https://www.wl.cn/resources/img/mall/logo.png" alt="欢迎来到蔚蓝">
+                </a>
+            </div>
+        </div>
+
+        <div class="container box-shadow">
+            <div class="box-content">
+                <!--{促销图片显示 start}-->
+                <div class="promotion-pic">
+                    <a href="javascript:;">
+                        <img src="http://static.wl.cn//upload/mall/login/2015-12-14/f38014ad50be999a1b3b8d15946ebca2.jpg"
+                            alt="促销图片">
+                    </a>
+                </div>
+                <!--{促销图片显示 end}-->
+                <!--{登陆框显示 start}-->
+                <div class="login-frame">
+                    <h1>登录蔚蓝网</h1>
+                    <div id="J_loginForm" class="pw-validation pure">
+                        <input type="hidden" name="returnUrl" value="">
+                        <input type="hidden" id="J_pwd_hide" name="pwd">
+                        <input type="hidden" id="J_name_type" name="name_type">
+                        <div id="J_loginErrorTip" class="login-error-tip"></div>
+                        <p>
+                            <label class="login-label" for="J_userName">用户名：</label>
+                            <input value="" tabindex="1" type="text" id="J_userName" name="name">
+                        </p>
+                        <p>
+                            <label class="login-label" for="J_pwd">密码：</label>
+                            <input value="" tabindex="2" type="password" id="J_pwd">
+                            <!-- 用来处理登录页面被浏览器默认功能  -->
+                            <input tabindex="-1" type="password" style="display:none;">
+                            <a href="https://www.wl.cn/user/findpwd/tofindpwd" class="forget-psw">忘记密码</a>
+                        </p>
+                        <p id="p_valid" class="is_valid">
+                            <label class="login-label" for="J_validCode">验证码</label>
+                            <input type="hidden" name="codeV" value="0">
+                            <input tabindex="3" type="text" id="J_validCode" name="J_validCode" class="valid-code">
+                            <img id="J_update_validCode" class="login_validCode" alt="点击更换图片"
+                                src="https://www.wl.cn//passport/veriValidCode">
+                        </p>
+                        <p class="login-status">
+                            <input type="checkbox" class="remember-me" id="J_rememberMe" name="rem" value="1">
+                            <label for="J_rememberMe">记住我的登录状态</label>
+                        </p>
+                        <p>
+                            <button type="submit" id="J_loginBtn"
+                                data-match-url="https://www.wl.cn/passport/judge"></button>
+                        </p>
+                    </div>
+                    <div class="partner-sites clearfix">
+                        <h2>使用合作网站登录蔚蓝:</h2>
+                        <p class="thirdpartys">
+                            <a href="" class="thirdparty_icon thirdparty_icon_alipay" title="支付宝">Alipay</a>
+                            <a href="" class="thirdparty_icon thirdparty_icon_txqq" title="QQ">QQ</a>
+                            <a href="" class="thirdparty_icon thirdparty_icon_sina" title="新浪微博">Sina</a>
+                        </p>
+                    </div>
+                    <div class="register-now">
+                        <!-- 链接注册网页 -->
+                        <p>还不是蔚蓝网用户？ <a href="#">立即注册</a></p>
+                    </div>
+                </div>
+                <!--{登陆框显示 end}-->
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+
+    </div>
+    <script src="../js/login.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("./wlfooter.html", function () {
+                console.log("加载成功");
+            })
+
+        })
+    </script>
+</body>
+
+</html>

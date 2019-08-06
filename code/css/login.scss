@@ -1,0 +1,286 @@
+*{padding: 0;margin: 0;}
+
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+    outline: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+.clearfix::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#page{
+    background: #f9f9f9;
+    font-size: 12px;
+    font-family: '新宋体', '宋体', '微软雅黑', Arial;
+
+    #header{
+        // background: url(../../img/mall/login-register-header-bg.gif) left top repeat-x;
+        background-color: #fff;
+        height: 68px;
+        margin-top: 0px;
+        border-bottom: 3px solid #2ba2e6;
+        min-width: 981px;
+
+       .header-search{
+            height: 62px;
+            margin-top: 5px;
+            position: relative;
+            width: 966px;
+            padding-left: 15px;
+            margin: 0 auto;
+            z-index: 99;
+
+           .logo{
+            margin-top:0px;
+            float: left;
+
+               img{
+                margin-top: 10px;
+               }
+           }
+
+       }
+    }
+
+    .container{
+        height: 512px;position: relative;zoom: 1;z-index: 10;width: 998px;margin: 0 auto;
+        .box-content{
+            width: 980px;
+            height: 512px;
+            position: relative;
+            zoom: 1;
+            display: block;
+            padding: 0 10px 0px 8px;
+            background: url(../images/bg-box.png) left bottom      repeat-y;
+            overflow: hidden;
+            .promotion-pic{
+                position: absolute;
+                left: 63px;
+                top: 75px;
+                width: 342px;
+                height: 342px;
+                border: 1px solid #EDEDED;
+                img{
+                    width: 342px;
+                    height: 342px;
+                }
+            }
+            .login-frame{
+                position: absolute;top: 39px;right: 62px;float: right;width: 411px;border: 1px solid #d4d4d4;border-radius: 3px;
+
+                h1{
+                    margin: 9px 0 0 16px;font-size: 18px;color: #666666;font-family: '微软雅黑';font-weight: 300;
+                }
+
+                .pw-validation{
+                    width: 355px;margin: 0px 0 0 15px;padding-left: 25px;border-bottom: 1px dashed #e4e4e4;
+
+                    input{
+                        width: 175px;height: 28px;line-height: 28px;overflow: hidden;border: none;background: url(../images/login-input.gif) no-repeat;
+                        padding: 0 10px;
+                    }
+
+                    .login-error-tip{
+                        visibility: hidden;height: 26px;margin: 4px 43px 4px 65px;border: 1px solid #febf90;padding-left: 26px;
+                        background: #fffbe1 url(../images/login-error-ico.png) 7px center no-repeat;color: #666;line-height: 26px;overflow: hidden;
+                    }
+
+                    p{
+                        height: 46px;
+
+                        label{
+                            width: 60px;
+                            font-size: 14px;
+                            color: #333333;
+                        }
+
+                        .login-label{
+                            display: inline-block;
+                            text-align: right;
+                        }
+
+                        button{
+                            width: 93px;height: 32px;margin-left: 65px;background: url(../images/login-btn.gif) no-repeat;border: none;cursor: pointer;
+                        }
+                    }
+
+                    .login-status{
+                        position: relative;
+                        color: #666666;
+                        input{
+                            position: absolute;left: 65px;top: 6px;width: 13px;height: 13px;background: none;
+                        }
+                        label{
+                            position: relative;
+                            left: 82px;
+                            top: 3px;
+                        }
+                    }
+
+                    #p_valid{
+                        display: none;
+                    }
+
+                    //错误时添加的样式
+                    .error-field{
+                        border: 1px solid #ff0033;
+                        box-shadow: 0 0 4px #ff6666;
+                    }
+
+                }
+
+                .partner-sites{
+                    height: 73px;
+                    margin-top: 18px;
+                    margin-bottom: 10px;
+                    h2{
+                        margin: 0 0 0 42px;
+                        font-weight: lighter;
+                        color: #666666;font-size: 12px;
+                    }
+                    .thirdpartys{
+                        margin: 16px 0 0 41px;
+                        display: block;
+
+                        .thirdparty_icon{
+                            width: 43px;height: 43px;margin-left: 10px;display: inline-block;text-indent: -9999px;
+                            float: left;
+                            background-image: url(../images/thirdparty_icon.jpg);                            
+                        }
+                        .thirdparty_icon_alipay{
+                            background-position: -57px 0px;
+                        }
+                        .thirdparty_icon_txqq{
+                            background-position: 0px 0px;
+                        }
+                        .thirdparty_icon_sina{
+                            background-position: -114px 0px;
+                        }
+
+                    }
+                }
+
+                .register-now{
+                    height: 75px;
+                    background-color: #f7f7f7;
+                    p{
+                        width: 18em;
+                        margin: 0 auto;
+                        padding-top: 31px;
+                        color: #888888;
+                        a{
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #0099CC;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    #footer{
+        .footer_tips{
+            width: 998px;padding-top: 30px;margin: 0 auto;
+            min-height: 200px;margin-top: -6px;box-sizing: border-box;position: relative;zoom: 1;z-index: 10;
+
+            i{
+                display: block;position: absolute;left: 0;top: 0;width: 100%;height: 30px;
+                background: url(../images/bg-box-gap.png) left top no-repeat;font-size: 0;
+                content: " ";
+            }
+            .box_content{
+                position: relative;zoom: 1;display: block;padding: 0 10px 0px 8px;background: url(../images/bg-box.png) left bottom repeat-y;
+                overflow: hidden;
+
+                .related_links{
+                    float: left;width: 690px;height: 168px;padding-top: 3px;padding-left: 40px;
+
+                    div{
+                        width: 120px;
+                        float: left;
+                        h3{
+                            display: block;height: 24px;font-size: 13px;text-align: left;color: #666666;
+                        }
+                        a{
+                            display: block;line-height: 20px;color: #666666;
+                        }
+                    }
+                }
+                .follow_us{
+                    position: relative;top: -5px;float: right;width: 250px;height: 161px;
+
+                    img{
+                        display: block;
+                        margin: 10px auto 0 auto;
+                    }
+                    div{
+                        height: 159px;padding-top: 8px;background: url(../images/border-bg-y.gif) repeat-y;
+                        a{
+                        }
+                    }
+                }
+            }
+        }
+        
+        .footer_nav{
+            min-height: 34px;width: 100%;margin: 0 auto;position: relative;background:url(../images/nav-box.png) repeat-x;
+
+            .f_n{
+                width: 815px;margin: 0 auto;
+                span{
+                    background: url(../images/footer-icon1.png) no-repeat;
+                    display: block;float: left;width: 135px;height: 34px;line-height: 34px;background-position: left 3px;padding-left: 28px;color: #fefefe;font-size: 16px;font-family: '微软雅黑';cursor: default;text-decoration: none;
+                }
+            }
+        }
+
+        .footer_links{
+            width: 545px;min-height: 18px;margin: 17px auto;
+            
+            a{
+                color: #333333;
+            }
+            span{
+
+            }
+        }
+
+        .footer_copyright{
+            width: 900px;min-height: 85px;margin: auto;padding: 25px 0;background: url(../images/copyright.gif) 320px 8px no-repeat;box-sizing: border-box;
+
+
+            .copyright{
+                padding-right: 70px;
+            }
+        }
+
+        .footer_final{
+            width: 260px;min-height: 47px;
+            margin: 31px auto;
+            a{
+                display: block;
+                width: 128px;
+                height: 47px;
+                background: url(../images/footer-certificate2.gif) no-repeat;
+            }
+        }
+    }
+
+}

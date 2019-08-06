@@ -7,7 +7,7 @@ $(function () {
     let imgCode = $("#J_validCodes");       //图形验证码
     let msgCode = $("#msgcode");            //短信验证码
     let sendMsgBtn = $(".register-validCodeButton")
-    let oBtn = $(".register-email-submit"); //注册按钮
+    let oBtn2 = $(".res2"); //注册按钮
 
     //拿到电话和密码的值，进行二次判断
     let userphoneText = "";
@@ -194,18 +194,18 @@ $(function () {
         }
     })
 
-    oBtn.click(function (e) {
-        userphoneText = "13242854645";
-        msgCodeText = "111";
-        imgCodeText = "222";
-        passwordCText = passwordDText = "33333333";
+    oBtn2.click(function (e) {
+        // userphoneText = "13242855902";
+        // msgCodeText = "111";
+        // imgCodeText = "222";
+        // passwordDText = passwordCText;
 
 
         if (userphoneText.length != 0 &&
             passwordCText.length != 0 &&
             passwordD.length != 0 &&
-            imgCode.length != 0 &&
-            msgCode.length != 0 &&
+            imgCodeText.length != 0 &&
+            msgCodeText.length != 0 &&
             $(".error-input").length == 0) {
             console.log(11111);
 
@@ -218,6 +218,7 @@ $(function () {
                     console.log(respone);
                     if (respone.status == "success") {
                         alert(respone.msg);
+                        window.location.href = "http://127.0.0.1/code/WeiLan-copy/code/html/login.html";
                     } else {
                         alert(respone.msg)
                     }

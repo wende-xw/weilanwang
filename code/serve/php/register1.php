@@ -14,7 +14,7 @@
     if(mysqli_num_rows($result1) == "1")
     {   
         $data["status"] = "error";
-        $data["msg"] = "注册失败：该用户名已被注册";
+        $data["msg"] = "注册失败：该邮箱已被注册";
     }else{
         $sql2="INSERT INTO `register` (`useremail`, `password`) VALUES ('$useremail', '$password')";
         mysqli_query($con,$sql2);

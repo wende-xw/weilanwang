@@ -5,7 +5,7 @@ $(function () {
     let userEmail = $("#useemail")
     let passwordA = $("#passwordA");
     let passwordB = $("#passwordB");
-    let oBtn = $(".register-email-submit");
+    let oBtn1 = $(".res1");
 
     //正则表达式
     let regEmail = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/   //邮箱
@@ -78,9 +78,7 @@ $(function () {
         }
     })
 
-    oBtn.click(function (e) {
-        useremailText = "734291616@qq.com";
-        passwordText = 12345678;
+    oBtn1.click(function (e) {
 
         if (useremailText.length != 0 && passwordText != 0 && $(".error-input").length == 0) {
 
@@ -93,6 +91,7 @@ $(function () {
                     console.log(respone);
                     if (respone.status == "success") {
                         alert(respone.msg);
+                        window.location.href = "http://127.0.0.1/code/WeiLan-copy/code/html/login.html";
                     } else {
                         alert(respone.msg)
                     }

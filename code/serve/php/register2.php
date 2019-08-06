@@ -3,20 +3,20 @@
 
     $userphone = $_REQUEST["userphone"];
     $password = $_REQUEST["password"];
+    // var_dump($userphone);
 
-
-    $sql1 = "SELECT 'phone' FROM  register WHERE phone = '$userphone'";
-    $result1=mysqli_query($con,$sql1);
+    $sql1 = "SELECT 'userphone' FROM  register WHERE userphone = $userphone ";
+    $result=mysqli_query($con,$sql1);
 
     $data=array("status"=>"","msg"=>"","data"=>"");
-    // var_dump(mysqli_num_rows($result1));
+    // var_dump(mysqli_num_rows($result));
 
-    if(mysqli_num_rows($result1) == "1")
+    if(mysqli_num_rows($result) == "1")
     {   
         $data["status"] = "error";
-        $data["msg"] = "注册失败：该用户名已被注册";
+        $data["msg"] = "注册失败：手机已被注册";
     }else{
-        $sql2="INSERT INTO `register` (`phone`, `password`) VALUES ('$userphone', '$password')";
+        $sql2="INSERT INTO `register` (`userphone`, `password`) VALUES ('$userphone', '$password')";
         mysqli_query($con,$sql2);
 
         $data["status"] = "success";
