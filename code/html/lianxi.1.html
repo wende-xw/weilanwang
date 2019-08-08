@@ -16,10 +16,13 @@
                     src="http://img.wl.cn/s/3398/9293398/9293398.jpg" style="height: 100%;"> </div> <em
                 class="bookList-text-title">篮球高手——招数漫画解析</em>
         </a>
-        <p class="bookList-text-infor"><a href="https://www.wl.cn/9042763" target="_blank"> </a><a target="_blank"
-                href="javascript:window.location.href=encodeURI('https://www.wl.cn/search?author=杨洪博')">杨洪博</a>
-            <span>著</span> <span class="bookList-text-publish">中国电力出版社</span> <span
-                class="bookList-text-isbn">9787519824976</span> <span class="bookList-text-time">2018-10-01
+        <p class="bookList-text-infor">
+            <a href="https://www.wl.cn/9042763" target="_blank"> </a>
+            <a target="_blank" href="">杨洪博</a>
+            <span>著</span>
+            <span class="bookList-text-publish">中国电力出版社</span>
+            <span class="bookList-text-isbn">9787519824976</span>
+            <span class="bookList-text-time">2018-10-01
                 00:00:00</span> </p>
         <p class="bookList-text-detail">
             想要在篮球场上迅速提高球技？你需要掌握一些实用的招数，《篮球高手——明星招数漫画解析》这本书以风趣幽默的漫画表现方式，以球迷耳熟能详的明星为模板，解析了十八个经典招数。不管你打什么位置，不管你喜欢哪种球风，这本书都会让你有所收获。同时，你将会在书中邂
@@ -51,29 +54,13 @@
                 class="save-btn J_addFav"></a> </p>
     </div>
     <script>
-        var arr = [];
-        $(".search-book-list").each(function (index, ele) {
+        let odiv = $(".search-book-list")
+        console.log(odiv);
+        odiv.each(function (index, ele) {
+            console.log(index, ele);
             var o = {};
-            o.src = $(this).find("img").attr("src");
-            o.bookTitle = $(this).find(".bookList-text-title").text();
-            o.author = $(this).find(".bookList-text-infor").children().eq(1).text();
-            o.publish = $(this).find(".bookList-text-publish").text();
-            o.isbn = $(this).find(".bookList-text-isbn").text();
-            o.time = $(this).find(".bookList-text-time").text();
-            o.detail = $(this).find(".bookList-text-detail").text();
-
-            o.wlprice = $(this).find(".bookList-text-price").children(".red").text();
-            o.delprice = $(this).find(".bookList-text-price").find("del").text();
-            o.btn_buy = $(this).find(".bookList-text-btn").find("a").eq(0).attr("class");
-
-            o.emprice = $(this).find(".bookList-text-price").find("em").text();
-
-            arr.push(o);
 
         })
-        var data = JSON.stringify(arr);
-        console.log(data);
-
     </script>
 
 </body>

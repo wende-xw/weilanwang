@@ -2,25 +2,57 @@
 
 header("Content-Type: text/html;charset=utf-8"); 
 
-    $weilan = mysqli_connect("127.0.0.1","root","","weilan");
+$con=mysqli_connect("127.0.0.1","root","","weilan");
+if($con){
+    echo 1;
+}
+$json=file_get_contents("../../html/data.json");
 
-    $data=file_get_contents("nav.json");
-    $arr=json_decode($data,true);
-    // var_dump($arr);
-    
+$data=json_decode($json,true);
+// var_dump($data);
+for($i=0;$i<count($data);$i++)
+{
+    var_dump($data[$i]);
+    $src=$data[$i]["src"];
+    $bookTitle=$data[$i]["bookTitle"];
+    $author=$data[$i]["author"];
+    $publish=$data[$i]["publish"];
+    $isbn=$data[$i]["isbn"];
+    $time=$data[$i]["time"];
+    $detail=$data[$i]["detail"];
+    $wlprice=$data[$i]["wlprice"];
+    $delprice=$data[$i]["delprice"];
+    $btn_buy=$data[$i]["btn_buy"];
+    $emprice=$data[$i]["emprice"];
 
-    echo "<br>";
-    for($i=0;$i<count($arr);$i++){
-        $title=$arr[$i]["title"];
-        $kind=json_encode($arr[$i]["kind"],true);
-        // var_dump(json_decode($kind,true));
+    // $sql="INSERT INTO `goodslist` (`gid`,`book_title`)
 
-        $sql="INSERT INTO `nav`(`title`, `kind`) VALUES ('$title','$kind')";
-        // // echo $sql;
-        // // echo '<br>';
-        $ok = mysqli_query($weilan,$sql);
-        var_dump($ok);
-    }
-    
+    $sql="INSERT INTO `goodslist` 
+    (`gid`, 
+    `book_title`, 
+    `book_author`, 
+    `book_publish`, 
+    `book_src`, 
+    `book_isbn`, 
+    `book_time`,
+    `book_detail`,
+    `book_wlprice`,
+    `book_delprice`,
+    `book_emprice`,
+    `book_btn_buy`) VALUES 
+    ('$i', 
+    '$bookTitle', 
+    '$author', 
+    '$publish', 
+    '$src', 
+    '$isbn', 
+    '$time',
+    '$detail',
+    '$wlprice',
+    '$delprice',
+    '$emprice',
+    '$btn_buy')";
 
+    mysqli_query($con,$sql);
+}
 ?>

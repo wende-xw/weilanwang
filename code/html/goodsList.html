@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/goodslist.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div id="listpage">
+        <!-- 头部 -->
+        <div id="header">
+
+        </div>
+
+        <div id="container">
+            <div class="box-content">
+                <div class="crumbs">
+                    <a href="https://www.wl.cn/index">蔚蓝网</a>
+                    <!--{面包屑 start}-->
+                    <span>&gt;&nbsp;</span>
+                    <a href="https://www.wl.cn/c1">图书</a>
+                    <span>&gt;&nbsp;</span>
+                    <a href="https://www.wl.cn/c6273">小说</a>
+                </div>
+
+                <div class="search-wrapper clearfix">
+                    <div class="sort-infor box-shadow">
+                        <div class="bookClassify">
+                            <h3>商品分类</h3>
+                            <ul id="categoriesTree ztree">
+                                <li id="categoriesTree_1">
+                                    <span id="categoriesTree_1_switch" class="button level0 switch root_open"></span>
+                                    <a href="">
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <ul>
+                                        <li id="categoriesTree_2" class="level1" tabindex="0" hidefocus="true"
+                                            treenode="">
+                                            <span id="categoriesTree_2_switch" title=""
+                                                class="button level1 switch bottom_open"></span>
+                                            <a id="categoriesTree_2_a" class="level1" title="动漫绘本">
+                                                <span id="categoriesTree_2_ico" class="button ico_open"
+                                                    style="width:0px;height:0px;">
+                                                </span>
+                                                <span id="categoriesTree_2_span">动漫绘本</span>
+                                            </a>
+                                            <ul id="categoriesTree_2_ul" class="level1 " style="display:block">
+                                                <li id="categoriesTree_3" class="level2">
+                                                    <span id="categoriesTree_3_switch" title=""
+                                                        class="button level2 switch bottom_docu"></span>
+                                                    <a id="categoriesTree_3_a" class="level2" style="" title="体育竞技">
+                                                        <span id="categoriesTree_3_ico" class="button ico_docu"
+                                                            style="width:0px;height:0px;">
+                                                        </span>
+                                                        <span id="categoriesTree_3_span">体育竞技</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                        <div class="seller">
+                            <h3>蔚蓝热卖</h3>
+                            <div class="sellers-list clearfix">
+                                <div class="sellers-item">
+                                    <div class="sellers-img">
+                                        <a target="_blank" class="bk-img-box" href="#" title="篮球高手——招数漫画解析">
+                                            <img src="http://img.wl.cn/s1/3398/9293398/9293398.jpg" alt="篮球高手——招数漫画解析"
+                                                style="height: 100%;">
+                                        </a>
+                                    </div>
+                                    <div class="sellers-detail">
+                                        <a href="https://www.wl.cn/9042763">篮球高手——招数漫画解析</a>
+                                    </div>
+                                    <p class="sellers-price">
+                                        <del>￥68.0</del>
+                                        <span class="red">￥45.7</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-infor">
+                        <!-- 搜索 -->
+                        <div class="search-condition">
+                            <!--{按价格搜索 start}-->
+                            <div class="byPrice">
+                                价格:<span class="active" begin="" end="">不限</span><span begin="0"
+                                    end="5">0-5元</span><span begin="5" end="10">5-10元</span><span begin="10"
+                                    end="15">10-15元</span><span begin="15" end="20">15-20元</span><span begin="20"
+                                    end="30">20-30元</span><span begin="30" end="50">30-50元</span><span begin="50"
+                                    end="99999">50元以上</span>
+                            </div>
+                            <!--{按价格搜索 end}-->
+                            <!--{按折扣搜索 start}-->
+                            <div class="byDiscount">
+                                折扣:<span class="active" begin="" end="">不限</span><span begin="0"
+                                    end="10">0-1折</span><span begin="20" end="30">2-3折</span><span begin="30"
+                                    end="40">3-4折</span><span begin="4" end="5">4-5折</span><span begin="50"
+                                    end="60">5-6折</span><span begin="60" end="70">6-7折</span><span begin="70"
+                                    end="100">7折以上</span>
+                            </div>
+                            <!--{按折扣搜索 end}-->
+                            <!--{按条件排序 start}-->
+                            <div class="terms-sort clearfix">
+                                <div class="sort-classfiy clearfix" id="J_sortHolder">
+                                    <a class="noborder">排序：</a>
+                                    <a order="1" data-up="1" class="down">销量</a>
+                                    <a order="11" data-up="10" data-down="11" class="down">人气</a>
+                                    <a order="5" data-up="4" data-down="5" class="down" id="order_price">价格</a>
+                                    <a order="9" data-up="8" data-down="9" class="down">折扣</a>
+                                    <a order="7" data-up="6" data-down="7" class="down">出版时间</a>
+                                    <a class="sort-stock">
+                                        <input id="J_stock" type="checkbox" class="check">
+                                        <label for="J_stock">只显示有货</label>
+                                    </a>
+                                    <p class="model clearfix">
+                                        <a class="list-pic"></a>
+                                        <span class="gap">|</span>
+                                        <a class="model list-text"></a>
+                                    </p>
+                                </div>
+                                <div class="jump clearfix">
+                                    <a id="J_pageUp" href="javascript:;" class="left"></a>
+                                    <a></a>
+                                    <a id="J_pageDown" href="javascript:;" class="right"></a>
+                                </div>
+                            </div>
+                            <!--{按条件排序 end}-->
+                        </div>
+
+                        <!-- 商品 -->
+                        <div id="J_template">
+                            <!-- <div class="search-book-list bookList-text clearfix">
+                                <a href="" target="_blank" class="img-box">
+                                    <img alt="篮球高手——招数漫画解析" src="http://img.wl.cn/s/3398/9293398/9293398.jpg"
+                                        style="height: 100%;">
+                                </a>
+                                <div class="detail">
+                                    <em class="bookList-text-title">篮球高手——招数漫画解析</em>
+                                    <p class="bookList-text-infor">
+                                        <a href="#" target="_blank">
+                                        </a>
+                                        <a target="_blank" href='#'>杨洪博</a>
+                                        <span>著</span>
+                                        <span class="bookList-text-publish">中国电力出版社</span>
+                                        <span class="bookList-text-isbn">9787519824976</span>
+                                        <span class="bookList-text-time">2018-10-01 00:00:00</span> </p>
+                                    <p class="bookList-text-detail">
+                                        想要在篮球场上迅速提高球技？你需要掌握一些实用的招数，《篮球高手——明星招数漫画解析》这本书以风趣幽默的漫画表现方式，以球迷耳熟能详的明星为模板，解析了十八个经典招数。不管你打什么位置，不管你喜欢哪种球风，这本书都会让你有所收获。同时，你将会在书中邂
+                                    </p>
+                                    <p class="bookList-text-price">
+                                        蔚蓝价：
+                                        <span class="red">45.7</span> 定价：<del>68</del>
+                                        <span class="lightRed">
+                                            省：<em>22.30</em>
+                                        </span>
+                                    </p>
+                                    <div class="bookList-pick">
+                                        <a target="_blank" class="buy-btn" data-wlid="9042763"></a>
+                                        <a href="javascript:;" data="9042763" class="save-btn J_addFav"></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- 分页 -->
+                        <div class="J_pagination_page">
+                            <span id="J_prevPage" class="prevPage disabled" title="Prev Page">上一页&nbsp;</span>
+                            <!-- <a href="" class="check">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a> -->
+                            <span href="" id="J_nextPage" title="next Page">&nbsp;下一页</span>
+
+                            <br>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <!-- 底部 -->
+        <div id="footer">
+
+        </div>
+    </div>
+    <script src="../js/listpage_list.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("./wlheader.html", function () {
+                console.log("加载成功");
+
+            })
+            $("#footer").load("./wlfooter.html", function () {
+                console.log("加载成功");
+
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
