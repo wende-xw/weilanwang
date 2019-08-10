@@ -80,6 +80,37 @@ html, body {
   outline: none;
 }
 
+#listpage #header .header_tips .links .cartAccount {
+  clear: both;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 20px;
+  padding: 0 10px 0 7px;
+  background: url(../images/viewCart.jpg) right 6px no-repeat;
+  background-color: #ffffff;
+}
+
+#listpage #header .header_tips .links .cartAccount em {
+  display: block;
+  float: left;
+  padding: 0 2px;
+  text-align: center;
+  font-style: normal;
+}
+
+#listpage #header .header_tips .links .cartAccount span {
+  display: block;
+  float: left;
+  padding: 0 3px;
+  color: #1063af;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+}
+
 #listpage #header .header_tips .links .links_div {
   width: 67px;
   float: left;
@@ -99,6 +130,122 @@ html, body {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#F5F5F5));
   right: 14px;
   display: none;
+}
+
+#listpage #header .header_tips .links .shopcar-l {
+  position: absolute;
+  width: 320px;
+  background: #fff;
+  top: 15px;
+  left: 120px;
+  z-index: 999;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+#listpage #header .header_tips .links .shopcar-l h4 {
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000000;
+  background: #ccc;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul {
+  padding: 10px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #ccc;
+  height: 70px;
+  width: 300px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li a img {
+  width: 60px;
+  height: 60px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor {
+  width: 185px;
+  height: 70px;
+  float: left;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor p {
+  width: 220px;
+  height: 50px;
+  position: relative;
+  padding-right: 5px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor p span {
+  font-size: 12px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor p .book_tit {
+  width: 140px;
+  float: left;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor p .book_pri {
+  float: right;
+  color: #c94848;
+  margin-right: 5px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor p .book_number {
+  float: right;
+}
+
+#listpage #header .header_tips .links .shopcar-l .ul ul li .car-infor p .delete {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  text-decoration: underline;
+  color: #1a66b3;
+  cursor: pointer;
+}
+
+#listpage #header .header_tips .links .shopcar-l .car-account {
+  padding: 15px 10px;
+  position: relative;
+}
+
+#listpage #header .header_tips .links .shopcar-l .car-account p {
+  height: 30px;
+  font-size: 14px;
+}
+
+#listpage #header .header_tips .links .shopcar-l .car-account p span {
+  color: #c94848;
+}
+
+#listpage #header .header_tips .links .shopcar-l .car-account a {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  display: block;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  background: #d17f13;
+  color: #fff;
+}
+
+#listpage #header .header_tips .links .shopcar-l_active {
+  display: block;
 }
 
 #listpage #header .header_search {

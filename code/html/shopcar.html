@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div id="shopcar">
+        <div id="header"></div>
+
+        <div id="container">
+            <!-- 结算列表 -->
+            <div class="car-infor">
+                <div class="box-content">
+                    <!-- 表头 -->
+                    <table class="cart-detail">
+                        <thead>
+                            <tr>
+                                <th width="460">商品名称</th>
+                                <th width="100">积分</th>
+                                <th width="100">蔚蓝价</th>
+                                <th width="100">优惠</th>
+                                <th width="100">数量</th>
+                                <th width='120'>操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <!-- 内容 -->
+                    <div class="cart-list">
+                        <fieldset class="cart-group cart-group-0">
+                            <table class="cart-detail">
+                                <tbody>
+
+                                </tbody>
+
+                            </table>
+
+                        </fieldset>
+
+                    </div>
+
+                    <!-- 表尾 -->
+                    <table class="cart-detail">
+                        <tfoot>
+                            <tr>
+                                <td colspan="6">
+                                    <div class="total-price-holder">
+                                        <a href="javascript:;" class="clear-all" id="J_empty">清空购物车</a>
+                                        <p>
+                                            <span class="title">商品总金额：</span>
+                                            <em class="common-price">￥<b class="syb-rmb" id="J_price">103.8</b></em>
+                                        </p>
+                                        <p>
+                                            <span class="title">优惠：</span>
+                                            <em class="common-price">￥<b class="syb-rmb"
+                                                    id="J_thriftPrice">29.5</b></em>
+                                        </p>
+                                        <p class="sum">
+                                            <span class="title">合计不含运费：</span>
+                                            <em class="common-price">￥<b class="syb-rmb" id="J_total">74.3</b></em>
+                                        </p>
+
+                                        <button class="go-to-pay">去结算</button>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer"></div>
+
+    </div>
+    <script src="../js/shopcar.js"></script>
+    <script>
+        $("#header").load("./wlheader.html", function () {
+            console.log("加载成功");
+
+        })
+        $("#footer").load("./wlfooter.html", function () {
+            console.log("加载成功");
+
+        })
+    </script>
+</body>
+
+</html>

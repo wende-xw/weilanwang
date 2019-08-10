@@ -84,6 +84,36 @@ html, body {
   outline: none;
 }
 
+.index #header .header_tips .links .cartAccount {
+  clear: both;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 20px;
+  padding: 0 10px 0 7px;
+  background: url(../images/viewCart.jpg) right 6px no-repeat;
+  background-color: #ffffff;
+}
+
+.index #header .header_tips .links .cartAccount em {
+  display: block;
+  float: left;
+  padding: 0 2px;
+  text-align: center;
+}
+
+.index #header .header_tips .links .cartAccount span {
+  display: block;
+  float: left;
+  padding: 0 3px;
+  color: #1063af;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+}
+
 .index #header .header_tips .links .links_div {
   width: 67px;
   float: left;

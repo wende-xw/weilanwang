@@ -48,6 +48,35 @@ html,body{
                     float: left;margin-right: 9px;margin-left: 3px;color: #6b6b6b;cursor: pointer;font-size: 12px;outline: none;
                 }
 
+                .cartAccount{
+                    clear: both;
+                    display: block;
+                    left: 0;
+                    top: 0;
+                    height: 20px;
+                    padding: 0 10px 0 7px;
+                    background: url(../images/viewCart.jpg) right 6px no-repeat;
+                    background-color: #ffffff;
+
+                    em{
+                        display: block;
+                        float: left;
+                        padding: 0 2px;
+                        text-align: center;
+                    }
+                    span{
+                        display: block;
+                        float: left;
+                        padding: 0 3px;
+                        color: #1063af;
+                        overflow: hidden;
+                        word-break: keep-all;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-weight: bolder;
+                    }
+                }
+
                 .links_div{
                     width: 67px;float:left;height: 30px;margin-right: 9px;margin-left: 3px;color: #6b6b6b;cursor: pointer;
                 

@@ -45,12 +45,150 @@ html,body{
                     float: left;margin-right: 9px;margin-left: 3px;color: #6b6b6b;cursor: pointer;font-size: 12px;outline: none;
                 }
 
+                .cartAccount{
+                    clear: both;
+                    display: block;
+                    left: 0;
+                    top: 0;
+                    height: 20px;
+                    padding: 0 10px 0 7px;
+                    background: url(../images/viewCart.jpg) right 6px no-repeat;
+                    background-color: #ffffff;
+
+                    em{
+                        display: block;
+                        float: left;
+                        padding: 0 2px;
+                        text-align: center;
+                        font-style: normal;
+                    }
+                    span{
+                        display: block;
+                        float: left;
+                        padding: 0 3px;
+                        color: #1063af;
+                        overflow: hidden;
+                        word-break: keep-all;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-weight: bolder;
+                    }
+                }
+
                 .links_div{
                     width: 67px;float:left;height: 30px;margin-right: 9px;margin-left: 3px;color: #6b6b6b;cursor: pointer;
                 
                     .client_serve{
                         padding: 3px;border: 1px solid #EEEEEE;z-index: 100;position: absolute;margin-top: 5px;background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff),to(#F5F5F5));right: 14px;display: none;
                     }
+                }
+
+
+                .shopcar-l{
+                    position: absolute;
+                    width: 320px;
+                    background: #fff;
+                    top:15px;
+                    left: 120px;
+                    z-index: 999;
+                    border: 1px solid #ccc;
+                    display: none;
+
+                    h4{
+                        padding-left: 10px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: #000000;
+                        background: #ccc;
+                    }
+
+                    .ul{
+                        padding: 10px;
+                        ul{
+                            // padding: 0 15px;
+                            li{
+                                padding: 5px 0;
+                                border-bottom: 1px dotted #ccc;
+                                height: 70px;
+                                width: 300px;
+                                a{
+                                    display: block;
+                                    width: 70px;height: 70px;
+                                    // background: #2BA2E6;
+                                    float: left;
+                                    img{
+                                        width: 60px;height: 60px;
+                                    }
+                                }
+                                .car-infor{
+                                    width: 185px;height: 70px;
+                                    float: left;
+                                    p{
+                                        width: 220px;
+                                        height: 50px;
+                                        position: relative;
+                                        padding-right: 5px;
+                                        span{
+                                            font-size: 12px;
+                                        }
+    
+                                        .book_tit{
+                                            width: 140px;
+                                            float: left;
+                                        }
+    
+                                        .book_pri{
+                                            // width: 100px;
+                                            float: right;
+                                            color: rgb(201, 72, 72);
+                                            margin-right: 5px;
+                                        }
+    
+                                        .book_number{
+                                            float: right;
+                                        }
+    
+                                        .delete{
+                                            position: absolute;
+                                            right: 25px;
+                                            top: 30px;
+                                            text-decoration: underline;
+                                            color: #1a66b3;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .car-account{
+                        padding: 15px 10px;
+                        position: relative;
+
+                        p{
+                            height: 30px;
+                            font-size: 14px;
+                            span{
+                                color: rgb(201, 72, 72);
+                            }
+                        }
+                        a{
+                            position: absolute;
+                            right: 10px;bottom: 10px;
+                            text-align: center;line-height: 30px;font-size: 16px;
+                            display: block;
+                            width: 150px;
+                            height: 30px;
+                            border-radius: 10px;
+                            background: rgb(209, 127, 19);
+                            color: #fff;
+                        }
+
+                    }
+                }
+                .shopcar-l_active{
+                    display: block;
                 }
             }
         }
